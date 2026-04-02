@@ -4,7 +4,7 @@ include 'partials/header.php'
 
 
       <section class="empty__page">
-        <h1>About page pppage</h1>
+        <h1>About page page</h1>
       </section>
 
 
