@@ -54,11 +54,9 @@ if (isset($_POST['submit'])) {
                     if (!move_uploaded_file($thumbnail_tmp_name, $thumbnail_destination_path)) {
                         $_SESSION['edit-post'] = "Failed to upload thumbnail";
                     }
-
                 } else {
                     $_SESSION['edit-post'] = "File size too large (max 2MB)";
                 }
-
             } else {
                 $_SESSION['edit-post'] = "File should be png, jpg, or jpeg";
             }
@@ -71,7 +69,6 @@ if (isset($_POST['submit'])) {
         $_SESSION['edit-post-data'] = $_POST;
         header('location: ' . ROOT_URL . 'admin/edit-post.php?id=' . $id);
         die();
-
     } else {
 
         // If this post is featured, reset all others
@@ -136,34 +133,6 @@ if (isset($_POST['submit'])) {
         mysqli_stmt_close($stmt);
 
         if (mysqli_affected_rows($connection) >= 0) {
-            $_SESSION['edit-post-success'] = "Post updated successfully";
-        } else {
-            $_SESSION['edit-post'] = "No changes made to post";
-        }
-    }
-
-} else {
-    $_SESSION['edit-post'] = "Unauthorized access";
-}
-
-header('location: ' . ROOT_URL . 'admin/');
-die();                header('location: ' . ROOT_URL . 'admin/edit-post.php?id=' . $id);
-                die();
-            }
-        }
-        
-        // Set thumbnail name if a new one uploaded, else keep old thumbnail name 
-        $thumbnail_to_insert = $thumbnail_name ?? $previous_thumbnail_name;
-        
-        // Update query
-        $query = "UPDATE posts SET title='$title', body='$body', thumbnail='$thumbnail_to_insert', category_id=$category_id, is_featured=$is_featured WHERE id=$id LIMIT 1";
-        $result = mysqli_query($connection, $query);
-        
-        if (!$result) {
-            $_SESSION['edit-post'] = "Update failed: " . mysqli_error($connection);
-            header('location: ' . ROOT_URL . 'admin/edit-post.php?id=' . $id);
-            die();
-        } elseif (mysqli_affected_rows($connection) >= 0) {
             $_SESSION['edit-post-success'] = "Post updated successfully";
         } else {
             $_SESSION['edit-post'] = "No changes made to post";
