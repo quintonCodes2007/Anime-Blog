@@ -41,9 +41,6 @@
 
 }
 
-
-
-
 body{
      font-family: "Montserrat", sans-serif;
      line-height: 1.6;
@@ -54,17 +51,17 @@ body{
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
+    width: var(--container-width-lg);
+    max-width: 1800px;
     margin-inline: auto;
 }
 
 section{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .section__extra-margin {
-    margin-top: 0rem;
+    margin-top: 3rem !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -105,7 +102,7 @@ img {
 /* nav */
 nav{
     background: var(--color-primary);
-    width: 100%;
+    width: 100vw;
     height: 4.5rem;
     position: fixed;
     top: 0;
@@ -508,7 +505,6 @@ input, textarea, select{
 
 /*======Dashboard======*/
 .dashboard{
-    width: 100%;
     margin-top: 6rem;
 }
 
@@ -568,19 +564,6 @@ input, textarea, select{
     color: var(--color-white);
 }
 
-/*==fixing table styling on mobile===*/
-.table__wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
-.dashboard main table {
-    width: 100%;
-}
-
-
-/*==end of fixing table on mobile===*/
-
 .dashboard main table td{
     padding: 0.8rem;
     border-bottom: 1px solid var(--color-grey-300);
@@ -596,7 +579,9 @@ input, textarea, select{
 /*==Devices===*/
 
 @media  screen and (max-width:1024px) {
-    
+    .container{
+        width: var(--container-width-md);
+    }
 
     h2{
         font-size: 1.6rem;
@@ -712,9 +697,8 @@ input, textarea, select{
     }
 
     .footer__container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        grid-template-columns:1fr 1fr ;
+        gap: 1rem;
     }
 
 
@@ -747,7 +731,7 @@ input, textarea, select{
     
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
     section{
         margin-top: 2rem;
     }
@@ -837,20 +821,6 @@ input, textarea, select{
         cursor: pointer;
         box-shadow: -1rem 0 2rem rgba(0, 0, 0, 0.4);
     }
-
-
-    .dashboard .container {
-    width: 100%;
-}
-
-.dashboard main table {
-    width: 100%;
-}
-
-.table__wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
 
     .dashboard aside a h5{
         display: inline-block;
