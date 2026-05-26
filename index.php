@@ -38,7 +38,7 @@ $posts = mysqli_query($connection, $query);
             <a href="<?= ROOT_URL ?>category-post.php?id=<?= $category['id'] ?>" class="category__button"><?= $category['title']?></a>
             <h2 class="post__title"><a href="<?= ROOT_URL ?>post.php?id=<?= $featured['id'] ?>"><?= $featured['title'] ?></a></h2>
             <p class="post__body">
-              <?= substr($featured['body'], 0, 300) ?> . . .
+              <?= substr($featured['body'], 0, 300) ?> read more
             </p>
             <div class="post__author">
 			<?php
