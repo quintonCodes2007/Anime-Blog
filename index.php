@@ -90,7 +90,7 @@ $posts = mysqli_query($connection, $query);
             <a href="<?= ROOT_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
           </h3>
           <p class="post__body">
-            <?= substr($post['body'], 0, 150) ?> . . .
+            <?= substr($post['body'], 0, 150) ?> <a href="<?= ROOT_URL ?>post.php?id=<?= $post['id'] ?>">... read more</a>
           </p>
           <div class="post__author">
 
