@@ -39,7 +39,7 @@ $posts = mysqli_query($connection, $query);
         <h2 class="post__title"><a href="<?= ROOT_URL ?>post.php?id=<?= $featured['id'] ?>"><?= $featured['title'] ?></a></h2>
         <p class="post__body">
           <?= substr($featured['body'], 0, 300) ?>
-        <h5> <a href="<?= ROOT_URL ?>post.php?id=<?= $featured['id'] ?>">... read more</a></h5>
+          <a href="<?= ROOT_URL ?>post.php?id=<?= $featured['id'] ?>">... read more</a>
         </p>
         <div class="post__author">
           <?php
