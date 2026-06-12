@@ -443,7 +443,7 @@ footer{
 .form__section{
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .form__section-container{
@@ -726,6 +726,7 @@ input, textarea, select{
     /*============general forms============*/
     .form__section-container{
         padding: 3rem;
+    
     }
 
     /*============Dashboard============*/
