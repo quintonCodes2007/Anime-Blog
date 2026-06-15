@@ -6,28 +6,30 @@
     <a href="mailto:khuwisebquinton@gmail.com"><i class="uil uil-envelope"></i></a>
   </div>
   <div class="container footer__container">
-  <div class="footer__header"><h4>Links</h4></div>
-  <div class="footer__links">
-    <article>
-      <ul>
-        <li><a href="">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/" target="_blank">Linkedin</a></li>
-      </ul>
-    </article>
-    <article>
-      <ul>
-        <li><a href="https://github.com/Pancakes19" target="_blank">Github</a></li>
-        <li><a href="https://pancakes19.github.io/Portfolio/" target="_blank">My Portfolio</a></li>
-      </ul>
-    </article>
-    <article>
-      <ul>
-        <li><a href="mailto:khuwisebquinton@gmail.com">Email</a></li>
-        <li><a href="">WhatsApp me</a></li>
-      </ul>
-    </article>
+    <div class="footer__header">
+      <h4>Links</h4>
+    </div>
+    <div class="footer__links">
+      <article>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/" target="_blank">Linkedin</a></li>
+        </ul>
+      </article>
+      <article>
+        <ul>
+          <li><a href="https://github.com/quintonCodes2007" target="_blank">Github</a></li>
+          <li><a href="https://quintonCodes2007.github.io/Portfolio/" target="_blank">My Portfolio</a></li>
+        </ul>
+      </article>
+      <article>
+        <ul>
+          <li><a href="mailto:khuwisebquinton@gmail.com">Email</a></li>
+          <li><a href="">WhatsApp me</a></li>
+        </ul>
+      </article>
+    </div>
   </div>
-</div>
 
   <div class="footer__copyright">
     <small>Copyright &copy; QUINTON KHUWISEB</small>
@@ -39,4 +41,5 @@
 
 <script src="<?= ROOT_URL ?>JS/main.js"></script>
 </body>
+
 </html>
