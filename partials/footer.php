@@ -2,7 +2,7 @@
   <div class="footer__socials">
     <a href="insta" target="_blank"><i class="uil uil-instagram"></i></a>
     <a href="https://www.linkedin.com/in/quinton-khuwiseb-b85b432a2/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
-    <a href="https://github.com/Pancakes19" target="_blank"><i class="uil uil-github-alt"></i></a>
+    <a href="https://github.com/quintonCodes2007" target="_blank"><i class="uil uil-github-alt"></i></a>
     <a href="mailto:khuwisebquinton@gmail.com"><i class="uil uil-envelope"></i></a>
   </div>
   <div class="container footer__container">
