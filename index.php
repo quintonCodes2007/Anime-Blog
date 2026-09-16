@@ -141,3 +141,4 @@ $posts = mysqli_query($connection, $query);
 <?php
 include 'partials/footer.php';
 ?>
+
