@@ -27,7 +27,7 @@ if(isset($_GET['id'])) {
 		  ?>
 	</h2>
   </header>  
-  <!--======================end of category title-->
+  <!--======================end of category title-------------------------->
 
 <?php if (mysqli_num_rows($posts) > 0) : ?>
 <section class="posts">
@@ -43,7 +43,9 @@ if(isset($_GET['id'])) {
             <a href="<?= ROOT_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
           </h3>
           <p class="post__body">
-				 <?= substr($post['body'], 0, 150) ?> . . .
+				 <p class="post__body">
+            <?= substr($post['body'], 0, 150) ?> <a href="<?= ROOT_URL ?>post.php?id=<?= $post['id'] ?>">... read more</a>
+          </p>
           </p>
           <div class="post__author">
 		  
